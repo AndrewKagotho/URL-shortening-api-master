@@ -1,0 +1,151 @@
+header{
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+#logo{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+nav{
+    font-weight: 600;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translateY(-50%);
+}
+nav li{
+    display: inline;
+    color: hsl(0, 0%, 55%);
+    padding: 0 15px;
+    position: relative;
+}
+nav a:first-child{
+    position: relative;
+    left: 0;
+}
+nav li a:hover{
+    color: hsl(260, 8%, 14%);
+}
+.menu hr{
+    display: none;
+    border: 1px solid white;
+    opacity: 0.1;
+    position: relative;
+    top: 57%;
+}
+header a{
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(0, 0%, 55%);
+}
+#login{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+header a:hover{
+    color: hsl(260, 8%, 14%);
+}
+#signLink{
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: hsl(180, 66%, 49%);
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+#signLink:hover{
+    background-color: hsl(180, 66%, 70%);
+}
+header svg{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 770px){
+    header{
+        height: 110px;
+        
+    }
+    #logo{
+        width: 110px;
+        left: 7%;
+    }
+    header svg{
+        display: block;
+    }
+    .menu{
+        visibility: hidden;
+        opacity: 0;
+        width: 90%;
+        height: 0;
+        border-radius: 5px;
+        background-color: hsl(255, 11%, 22%);
+        transition: visibility 0.2s ease;
+        transition: height 0.3s ease;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    nav{
+        width: 100%;
+        font-weight: 600;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    nav ul{
+        width: 100%;
+        font-size: 1.5em;
+        padding: 0;
+        margin: 0;
+    }
+    nav li{
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+    }
+    nav li a{
+        color: #FFF;
+    }
+    .menu hr{
+        display: block;
+    }
+    #login{
+        font-size: 1.5em;
+        color: #FFF;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        top: 65%;
+        right: 50%;
+        transform: translate(50%,0);
+    }
+    #signLink{
+        font-size: 1.5em;
+        padding: 15px 30%;
+        border-radius: 25px;
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        top: 78%;
+        right: 50%;
+        transform: translate(50%,0);
+    }   
+}

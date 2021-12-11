@@ -1,0 +1,113 @@
+footer{
+    width: 100%;
+    height: 280px;
+    background-color: hsl(260, 8%, 14%);
+    position: relative;
+    top: 300px;
+}
+footer svg{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+footer svg path{
+    fill: #FFF;
+}
+footer div{
+    width: 10%;
+    height: 100px;
+    color: #FFF;
+    position: absolute;
+    top: 20%;
+}
+footer span{
+    font-weight: 700;
+}
+footer ul{
+    padding: 0;
+    list-style-type: none;
+    line-height: 2.2;
+}
+footer li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 75%);
+}
+.list-features{
+    position: absolute;
+    left: 38%;
+}
+.list-resources{
+    position: absolute;
+    left: 51%;
+}
+.list-company{
+    position: absolute;
+    left: 64%;
+}
+li a:hover{
+    color: hsl(180, 66%, 49%);
+}
+.icons{
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 75%;
+}
+.icons ul{
+    list-style-type: none;
+    white-space: nowrap;
+    margin: 0;
+}
+.icons li{
+    display: inline-block;
+    height: 20px;
+    padding: 0 20px;
+    position: relative;
+}
+.icons path:hover{
+    fill: hsl(180, 66%, 49%);
+}
+
+@media screen and (max-width: 770px){
+    footer{
+        height: 850px;
+        top: 380px;
+    }
+    footer svg{
+        top: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer div{
+        width: 50%;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .list-features{
+        position: relative;
+        top: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .list-resources{
+        position: relative;
+        top: 28%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .list-company{
+        position: relative;
+        top: 38%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .icons{
+        height: 40px;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .icons img{
+        height: 10%;
+    }
+}

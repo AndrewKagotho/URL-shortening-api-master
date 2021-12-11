@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+html{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding:0;
+    margin:0;
+}
+#welcome{
+    width: 100%;
+    height: 480px;
+    position: relative;
+}
+.details{
+    width: 45%;
+    height: 85%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.details h1{
+    font-size: calc(4.2em + 1vw);
+    line-height: 1.2;
+    margin: 0;
+    position: absolute;
+    top: 12%;
+}
+.details p{
+    font-size: 1.3em;
+    line-height: 1.7;
+    padding-right: 20%;
+    color: hsl(0, 0%, 55%);
+    position: absolute;
+    top: 50%;
+}
+.details button{
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border-width: 0;
+    background-color: hsl(180, 66%, 49%);
+    color: #FFF;
+    position: absolute;
+    top: 75%;
+}
+.details button:hover{
+    background-color: hsl(180, 66%, 70%);
+}
+#welcome img{
+    height: 87%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(10%,-50%);
+}
+
+.mainDiv{
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    top: 100px;
+}
+.inputDiv{
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    background-image: url('images/bg-shorten-desktop.svg');
+    background-color: hsl(257, 27%, 26%);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.inputDiv input{
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    width: 73%;
+    height: 35%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-width: 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+.inputDiv span{
+    display: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: red;
+    padding-left: 30px;
+    position: absolute;
+    top: 70%;
+    left: 30px;
+}
+.inputDiv button{
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    width: 15%;
+    height: 35%;
+    border-width: 0;
+    border-radius: 10px;
+    background-color: hsl(180, 66%, 49%);
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.inputDiv button:hover{
+    background-color: hsl(180, 66%, 70%);
+}
+.linkContainer{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50px);
+}
+.linkContainer ul{
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.listItem{
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    white-space: pre;
+    border-radius: 5px;
+    background-color: #FFF;
+    margin-bottom: 15px;
+    position: relative;
+}
+.listItem hr{
+    display: none;
+}
+.originalLink{
+    font-size: 1.1em;
+    position: absolute;
+    left: 30px;
+}
+.newLink{
+    font-size: 1.1em;
+    color: hsl(180, 66%, 49%);
+    position: absolute;
+    right: 135px;
+}
+.copyLink{
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border-width: 0;
+    background-color: hsl(180, 66%, 49%);
+    color: #FFF;
+    position: absolute;
+    right: 30px;
+}
+.copyLink:hover{
+    background-color: hsl(180, 66%, 70%);
+}
+.clearHistory{
+    font-size: 1em;
+    padding: 10px 40px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border-width: 0;
+    background-color: hsl(180, 66%, 49%);
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.clearHistory:hover{
+    background-color: hsl(180, 66%, 70%);
+}
+
+.moreInfo{
+    width: 40%;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.moreInfo h2{
+    width: 100%;
+    font-size: 2.5em;
+    position: absolute;
+    top: 5%;
+}
+.moreInfo p{
+    font-size: 1.1em;
+    line-height: 2;
+    padding: 0 5%;
+    color: hsl(0, 0%, 55%);
+    position: absolute;
+    top: 50%;
+}
+.features{
+    width: 80%;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features #horizontalLine{
+    display: block;
+    width: 50%;
+    border-top: 5px solid hsl(180, 66%, 49%);
+    border-bottom: 5px solid hsl(180, 66%, 49%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.features #verticalLine{
+    display: none;
+}
+.featureContainer{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.item{
+    width: 31%;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #FFF;
+    z-index: 2;
+}
+.imgBorder{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsl(260, 8%, 14%);
+    position: relative;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.featureContainer img{
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.item h3{
+    width: 80%;
+    font-size: 1.3em;
+    padding: 0 10%;
+    position: relative;
+    top: -15%;
+}
+.item p{
+    width: 80%;
+    font-size: 1em;
+    line-height: 1.7;
+    padding: 0 10%;
+    color: hsl(0, 0%, 55%);
+    position: relative;
+    top: -18%;
+}
+.item-recognition{
+    align-self: start;
+}
+.item-records{
+    align-self: center;
+}
+.item-custom{
+    align-self: end;
+}
+
+.bottom{
+    width: 100%;
+    height: 230px;
+    position: relative;
+    top: 200px;
+    background-image: url('images/bg-boost-desktop.svg');
+    background-color: hsl(257, 27%, 26%);
+}
+.bottom span{
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bottom button{
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border-width: 0;
+    background-color: hsl(180, 66%, 49%);
+    color: #FFF;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bottom button:hover{
+    background-color: hsl(180, 66%, 70%);
+}
+
+@media screen and (max-width: 770px){
+    #welcome{
+        height: 650px;
+    }
+    .details{ 
+        width: 100%;
+        height: 47%;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .details h1{
+        width: 95%;
+        font-size: calc(2.8em + 1vw);
+        text-align: center;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .details p{
+        width: 90%;
+        text-align: center;
+        padding-right: 0;
+        top: 32%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .details button{
+        white-space: nowrap;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #welcome img{
+        height: 45%;
+        top: 0%;
+        right: 50%;
+        transform: translate(65%,0);
+    }
+    .mainDiv{
+        top: 100px;
+    }
+    .inputDiv{
+        width: 85%;
+        height: 180px;
+        background-image: url('images/bg-shorten-mobile.svg');
+        background-repeat: no-repeat;
+    }
+    .inputDiv input{
+        width: 85%;
+        height: 30%;
+        font-size: 1.3em;
+        padding-left: 30px;
+        border-radius: 5px;
+        top: 11%;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .inputDiv span{
+        font-size: 1.2em;
+        top: 42%;
+    }
+    .inputDiv button{
+        width: 85%;
+        height: 30%;
+        font-size: 1.3em;
+        border-radius: 5px;
+        top: 89%;
+        right: 50%;
+        transform: translate(50%,-100%);
+    }
+    .linkContainer{
+        width: 85%;
+        transform: translate(-50%,-70px);
+    }
+    .listItem{
+        height: 150px;
+        align-items: start;
+        margin-bottom: 20px;
+        background-color: #FFF;
+    }
+    .listItem hr{
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid black;
+        opacity: 0.1;
+        position: absolute;
+        top: 25%;
+    }
+    .originalLink{
+        font-size: 1.3em;
+        position: relative;
+        top: 7%;
+        left: 7%;
+    }
+    .newLink{
+        font-size: 1.3em;
+        position: absolute;
+        top: 36%;
+        left: 7%;
+    }
+    .copyLink{
+        width: 90%;
+        height: 40px;
+        font-size: 1.2em;
+        font-weight: 700;
+        padding: 0;
+        top: 62%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .clearHistory{
+        width: 50%;
+        height: 40px;
+        font-size: 1.2em;
+        font-weight: 700;
+        padding: 0;
+    }
+    .moreInfo{
+        width: 85%;
+        height: 150px;
+        top: 10px;
+    }
+    .moreInfo h2{
+        font-size: 2em;
+        top: 5%;
+    }
+    .moreInfo p{
+        font-size: 1.2em;
+        line-height: 2;
+        padding: 0;
+        top: 45%;
+    }
+    .features{
+        width: 85%;
+        height: 850px;
+        top: 135px;
+    }
+    .features horizontalLine{
+        display: none;
+    }
+    .features #verticalLine{
+        display: block;
+        height: 90%;
+        border: 5px solid hsl(180, 66%, 49%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+    }
+    .featureContainer{
+        flex-direction: column;
+        justify-content: start;
+        gap: 100px;
+    }
+    .item{
+        width: 100%;
+        height: 250px;
+        align-self: center;
+        position: relative;
+    }
+    .imgBorder{
+        width: 80px;
+        height: 80px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .item h3{
+        width: 100%;
+        font-size: 1.5em;
+        padding: 0;
+        text-align: center;
+        top: -15%;
+    }
+    .item p{
+        font-size: 1.1em;
+        text-align: center;
+        top: -17%;
+    }
+    .item-recognition{
+        left: 0;
+    }
+    .item-records{
+        left: 0;
+    }
+    .item-custom{
+        left: 0;
+    }
+    .bottom{
+        height: 280px;
+        top: 280px;
+        background-image: url('images/bg-boost-mobile.svg');
+    }
+    .bottom span{
+        width: 100%;
+        font-size: 2em;
+        top: 32%;
+    }
+    .bottom button{
+        white-space: nowrap;
+        padding: 20px 50px;
+        top: 55%;
+    }
+}
